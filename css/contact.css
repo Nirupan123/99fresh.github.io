@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: unset;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.rt{
+    
+    width: 100%;
+    height: 100%;
+}
+.senior{
+    width: 90%;
+    height: 76%;
+    
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: repeat(4,200px);
+    grid-gap: 140px;
+}
+.image1{
+    background-color: rgb(255, 246, 232);
+    width: 250px;
+    height: 280px;
+    margin: 10px 40px;
+    box-shadow: 0 0 10px 0 rgba(231, 230, 230, 0.8);
+    border-radius: 10px;
+}
+.fit{
+    
+    width: 170px;
+    height: 190px;
+    margin: 0px 40px;
+}
+.fit img{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 170px;
+    height: 180px;
+    object-fit: cover;
+}
+.nam{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    
+    width: 160px;
+    height: 50px;
+    margin: 0px 45px;
+}
+.mill{
+    width: 80%;
+    border: 2px solid rgb(240, 237, 237,0.5);
+    height: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    margin: 50px auto;
+
+}
+
+.millpic img{
+    width: 100%;
+    height: 100%;
+}
+.subscribe{
+    
+    width: 100%;
+    height: 200px;
+}
+.type{
+    margin: 50px auto;
+   
+    height: 150px;
+    width: 80%;
+
+}
+.in{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.in input[type=text]{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #777;
+    outline: none;
+    animation-name: new;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease;
+    border-radius: 5px;
+    
+}
+@keyframes new{
+    0%{ transform: scale(1);}
+    25%{box-shadow: 0 0 30px 0 rgba(122, 121, 121, 0.507);}
+}
+.in input[type=text]:hover{
+    transition: all 1s ease;
+    
+    animation-play-state: paused;
+    border: 4px solid rgb(0, 162, 255);
+    border-radius: 10px;
+    
+}
+.hem h2{
+    border-bottom: 1px solid rgba(252, 246, 246, 0.8);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+
+}
+
+@media screen and (max-width:1200px) {
+    .senior{
+        display: flex;
+        flex-direction: column;
+    }
+    .mill{
+        display: flex;
+        flex-direction: column;
+    }
+}
